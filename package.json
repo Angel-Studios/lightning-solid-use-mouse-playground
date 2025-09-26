@@ -1,0 +1,68 @@
+{
+  "name": "solid-app",
+  "version": "2.5.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "vite --open --host --force",
+    "start:prod": "vite --open --host --force --mode production",
+    "build": "vite build --sourcemap=true",
+    "build:analyze": "vite-bundle-visualizer",
+    "preview": "vite preview --open --port 8080",
+    "test": "vitest",
+    "tsc": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prepare": "husky",
+    "lint": "eslint '**/*.{js,ts,jsx,tsx}' --format stylish --ignore-pattern 'dist/*' --ignore-pattern 'node_modules'",
+    "lint-fix": "eslint '**/*.{js,ts,jsx,tsx}' --fix  --ignore-pattern 'dist/*' --ignore-pattern 'node_modules'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lightningjs/renderer": "2.17.0",
+    "@lightningtv/core": "^2.12.2",
+    "@lightningtv/solid": "^2.10.13",
+    "@lightningtv/vite-hex-transform": "^1.1.0",
+    "@solid-primitives/i18n": "^2.2.1",
+    "@solidjs/router": "^0.15.3",
+    "@vitest/coverage-v8": "^3.2.4",
+    "lodash-es": "^4.17.21",
+    "shaka-player": "^4.15.5",
+    "solid-js": "^1.9.7",
+    "storybook": "^9.0.17",
+    "storybook-solidjs-vite": "^9.0.2"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@eslint/js": "^9.30.1",
+    "@vitejs/plugin-legacy": "^6.1.1",
+    "@vitest/browser": "^3.2.4",
+    "eslint": "^9.30.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-storybook": "^9.0.15",
+    "globals": "^16.3.0",
+    "husky": "^9.1.7",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^16.1.2",
+    "playwright": "^1.54.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vite": "^6.3.5",
+    "vite-bundle-visualizer": "^1.2.1",
+    "vite-plugin-cross-origin-isolation": "^0.1.6",
+    "vite-plugin-solid": "^2.11.7",
+    "vitest": "^3.2.4"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  },
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
+}
