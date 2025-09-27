@@ -15,7 +15,7 @@ const styles = {
       border: { width: 5, color: "#000" },
     },
     scale: 1,
-    focus: {
+    $focus: {
       color: 0x58807dff,
       scale: 1.2,
       effects: {

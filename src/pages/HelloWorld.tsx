@@ -13,10 +13,8 @@ const HelloWorld = () => {
       </Text>
       <Text style={styles.headlineSubText}>T for Text pages, M for here</Text>
       <Row>
-        <Button style={{ $focus: { color: "red" } }} state="$focus" onEnter={() => console.log("Enter1")}>
-          Click me
-        </Button>
-        <Button style={{ $focus: { color: "red" } }} onEnter={() => console.log("Enter2")}>
+        <Button onEnter={() => console.log("Enter1")}>Click me one</Button>
+        <Button onEnter={() => console.log("Enter2")} onFocus={() => console.log("Focus2")}>
           Click me
         </Button>
       </Row>
