@@ -53,6 +53,7 @@ styles.text = {
 };
 
 export default function Button(props) {
+  console.log(props);
   return (
     <View {...props} forwardStates style={styles.container}>
       <Text style={styles.text}>{props.children}</Text>
