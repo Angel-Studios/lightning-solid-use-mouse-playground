@@ -47,6 +47,9 @@ styles.text = {
   color: "#000",
   height: styles.container.height,
   width: styles.container.width,
+  $focus: {
+    fontSize: 34,
+  },
 };
 
 export default function Button(props) {
