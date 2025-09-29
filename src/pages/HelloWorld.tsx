@@ -3,6 +3,7 @@ import { $t } from "../translate";
 import styles from "../styles";
 import Button from "@/components/Button/Button";
 import { Row } from "@lightningtv/solid/primitives";
+import { Container } from "@/components/Button/container/Container";
 
 const HelloWorld = () => {
   return (
@@ -18,6 +19,7 @@ const HelloWorld = () => {
           Click me
         </Button>
       </Row>
+      <Container />
     </>
   );
 };
