@@ -3,8 +3,6 @@ import { Route } from "@solidjs/router";
 import { HashRouter, useFocusManager } from "@lightningtv/solid/primitives";
 import App from "./pages/App";
 import HelloWorld from "./pages/HelloWorld";
-import TextPage from "./pages/Text";
-import NotFound from "./pages/NotFound";
 import fonts from "./fonts";
 import { merge } from "lodash-es";
 import { config } from "#devices/common";
@@ -18,8 +16,6 @@ render(() => {
   return (
     <HashRouter root={App}>
       <Route path="/" component={HelloWorld} />
-      <Route path="/text" component={TextPage} />
-      <Route path="/*all" component={NotFound} />
     </HashRouter>
   );
 });
