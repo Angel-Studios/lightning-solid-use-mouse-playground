@@ -4,7 +4,7 @@ import { View } from "@lightningtv/solid";
 
 export const Container = () => {
   return (
-    <View x={200} y={200} w={800} h={300} gap={26}>
+    <View x={200} y={200} width={800} height={300} gap={26}>
       <Row>
         <Button onEnter={() => console.log("Enter1")}>Container Button</Button>
         <Button onEnter={() => console.log("Enter2")} onFocus={() => console.log("Focus2")}>
